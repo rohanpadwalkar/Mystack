@@ -1,0 +1,198 @@
+/*body*/
+body
+{
+    
+    margin-left: 16px;    
+    height: 100%;
+    color: #fff;
+    background-color: #F0F3F4;
+}
+
+/*nav-bar top*/
+
+nav.navbar.navbar-default.navbar-fixed-top 
+{
+    background-color: rgb(44, 62, 80);
+}
+
+a.navbar-brand
+{
+    font-size: 1.5em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    font-weight: 700;
+
+}
+
+.navbar
+{
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+.navbar .navbar-nav
+{
+    letter-spacing: 1px;
+}
+.navbar-default .navbar-nav>li>a
+{
+    color: #FFF;
+}
+
+/*Theam Panel*/
+
+.theamcss {
+        top: 155px;
+        background-color:transparent;
+      
+        position: fixed;
+       
+        right: 0;
+    }
+h4.glyphicon
+{
+    cursor: pointer;
+    color: rgb(198, 213, 213);
+    margin-top: 13px;
+}
+
+
+
+#Theampanelbtn
+{
+    margin-top: 1px;
+   border-right-width: 0;
+    background: rgba(145, 168, 168, 0.82) !important;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+#Theampanel {
+    background-color: white;
+  
+  width: 250px;
+    height: 200px;
+    float: left;
+    border: 1px solid #dee5e7;
+
+}
+.alltheamoption {
+    width:100%;
+    height:100%;
+}
+
+
+h3.glyphicon.glyphicon-cog 
+{
+    margin: 7px;
+}
+
+
+.settingheading {
+    width: 100%;
+    height: 40px;
+    background: rgba(145, 168, 168, 0.82) !important;
+        
+}
+
+.settingh {
+    padding: 10px 15px;
+}
+
+
+.graybtn {
+    background-color: #617992;
+}
+
+.micbtn {
+   background-color: #CFD8D5;
+}
+
+
+/*maincontainer*/
+
+.mycontainer {
+    margin-right: 0;
+margin-left: 20px;
+width: 100%;
+}
+
+tbody>tr>td>label {
+color: black;
+}
+
+
+/*SideOption*/
+
+.sideoptions {
+    height: 800px;
+    background-color: rgb(44, 62, 80);
+    padding-top: 6px;
+}
+.sidepanel {
+    background-color: rgb(44, 62, 80);
+  
+}
+side-panel>ul>li {
+border-bottom: 1px solid #dee5e7;
+    font-size: 1.2em;
+font-weight: 700;
+}
+side-panel>ul>li>a {
+color: white;
+}
+
+
+
+.container.navcontainer
+{
+    width: 100%;
+}
+.row{
+margin-right: 0;
+margin-right: 0;
+
+}
+
+
+
+.nopadding{
+padding: 0 !important;
+    margin: 0 !important;
+}
+
+/*header*/
+header {
+    width: 100%;
+    margin-top: 51px;
+}
+
+
+.mainWrapper {
+    position: inherit;
+}
+
+#pageTitle {
+   width: 100%;
+    height: 100%;
+}
+.page {
+border-left: solid #FFDF00;
+    width: 100%;
+    height: 100%;
+}
+div#col10 {
+position: inherit;
+}
+side-panel>ul {
+height: 700px;
+}
+.navbar-default .navbar-brand {
+color: #FFF;
+}
+.navbar-nav>li:hover {
+background-color: aliceblue;
+}

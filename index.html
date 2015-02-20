@@ -1,0 +1,67 @@
+<!doctype html>
+<html ng-app="myStack">
+    <head>
+         <meta charset="utf-8">
+         <title>Routing</title>
+        
+          
+        
+       
+         
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+         <link rel="stylesheet" href="css/mysite.css">  
+         <link rel="stylesheet" href="css/font-awesome.min.css">
+            
+        <link rel="stylesheet" href="css/animate.css">
+         
+        <script src="css/jquery/jquery.min.js"></script>
+        <script src="css/jquery/bootstrap.min.js"></script>
+        <script src="css/jquery/angular.min.js"></script>
+        
+        <script src="css/jquery/angular-route.min.js"></script>
+        <script src="css/jquery/angular-animate.min.js"></script>
+        
+          <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/directives.js"></script>
+      
+    </head>
+    
+    <body ng-controller="MystackSettings" ng-style="{'background-color': mybgColor}" class="col-md-12 nopadding">
+            <!--Nav bar-->
+                <nav-bar></nav-bar>
+             <!--Nav bar-->
+
+            <!--theam panel-->
+                <theam-panel class="theamcss pull-right"></theam-panel>
+            <!--theam panel-->
+   
+    <header class="">
+        
+        <div  class="mainWrapper col-md-12 nopadding" >
+            
+            <side-panel class="nopadding col-md-2 nopadding" ng-init="showSidePanle = false" ng-hide="showSidePanle">
+            
+            </side-panel>
+            
+            <div id="col10" class="nopadding" ng-class="{'col-md-10':showSidePanle==false,'col-md-12':showSidePanle==true}">
+                      
+                
+                    <div class="page {{ pageClass }}"  ng-view >
+                        <!--all views go here-->
+                    </div>
+                   
+                
+            </div>
+            
+        </div>
+        </header>
+    
+        
+    
+    
+    </body>
+   
+   
+  
+</html>

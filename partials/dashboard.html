@@ -1,0 +1,37 @@
+<div id="pageTitle" align="center">
+    
+        <h1 class="thintext">{{title}}</h1>
+        <p>This is {{title}}</p>
+    
+    <canvas id="canvas" width="500px" height="300px"></canvas>
+<input type="file" id="file-input" class="filestyle">
+<script>
+$(function() {
+    $('#file-input').change(function(e) {
+        var file = e.target.files[0],
+            imageType = /image.*/;
+
+        if (!file.type.match(imageType))
+            return;
+
+        var reader = new FileReader();
+        reader.onload = fileOnload;
+        reader.readAsDataURL(file); 
+       
+    });
+
+    function fileOnload(e) {
+        var $img = $('<img>', { src: e.target.result });
+        var canvas = $('#canvas')[0];
+        var context = canvas.getContext('2d');
+
+        $img.load(function() {
+            context.drawImage(this, 0, 0);
+        });
+    }
+});
+</script>
+        
+        
+   
+</div>
