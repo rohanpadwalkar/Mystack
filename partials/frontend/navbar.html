@@ -13,15 +13,24 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                
+                
                 <ul class="nav navbar-nav navbar-left hidden-sm hidden-xs visible-md visible-lg">
-                    
-                 
-                        <h4 id="sidepanelbtn" ng-click="showSidePanle = ! showSidePanle" class="glyphicon glyphicon-indent-right"></h4>
-                   
-
+                 <h4 id="sidepanelbtn" ng-click="showSidePanle = ! showSidePanle" class="glyphicon glyphicon-indent-right"></h4>
                 </ul>
+                
+               
                 <ul class="nav navbar-nav navbar-right">
-                    
+                  <!--
+                        <form class="navbar-form hidden-sm hidden-xs visible-md visible-lg" role="search" style="float: left;"  >
+                                <div class="input-group">
+                                    <input type="text" class="form-control input-sm" placeholder="Search" name="srch-term" id="srch-term">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default input-sm" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                        </form>-->
+                   
                     <li ng-click="tab=1" ng-class="{'active':tab==1}">
                         <a href="#about">About</a>
                     </li>
@@ -31,10 +40,24 @@
                     <li ng-click="tab=3" ng-class="{'active':tab==3}">
                         <a href="#location">Location</a>
                     </li>
-                    <li ng-click="tab=4" ng-class="{'active':tab==4}">
-                        <a href="#media">Media</a>
-                    </li>
+                    <li class="dropdown" ng-click="tab=4" ng-class="{'active':tab==3}" >
+                       <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          
+                        </ul>
+                      </li>
                 </ul>
+                
+                 <div class="col-sm-3 col-md-3 pull-right">
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="q">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>  
             </div>
             <!-- /.navbar-collapse -->
         </div>

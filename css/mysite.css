@@ -1,4 +1,9 @@
 /*body*/
+.searchMenu:hover
+{
+
+    background-color: transparent;
+}
 body
 {
     
@@ -39,6 +44,9 @@ a.navbar-brand
 {
     color: #FFF;
 }
+
+
+
 
 /*Theam Panel*/
 
@@ -186,6 +194,7 @@ border-left: solid #FFDF00;
 }
 div#col10 {
 position: inherit;
+    
 }
 side-panel>ul {
 height: 700px;
@@ -195,4 +204,7 @@ color: #FFF;
 }
 .navbar-nav>li:hover {
 background-color: aliceblue;
+}
+ul.dropdown-menu {
+height: 170px;
 }
